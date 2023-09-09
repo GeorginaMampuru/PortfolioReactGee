@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import ReactTooltip from 'react-tooltip';
 
 import { AppWrap, MotionWrap } from '../../wrapper';
-import { urlFor, client } from '../../client';
+
 import './Skills.css';
 
 const Skills = () => {
@@ -11,21 +11,12 @@ const Skills = () => {
   const [skills, setSkills] = useState([]);
 
   useEffect(() => {
-    const query = '*[_type == "experiences"]';
-    const skillsQuery = '*[_type == "skills"]';
-
-    client.fetch(query).then((data) => {
-      setExperiences(data);
-    });
-
-    client.fetch(skillsQuery).then((data) => {
-      setSkills(data);
-    });
+    // You can fetch data here if needed, or remove this useEffect entirely
   }, []);
 
   return (
     <>
-      <h2 className="head-text">Skills & Experiences</h2>
+      <h2 className="head-text">Tech Skills & Experiences</h2>
 
       <div className="app__skills-container">
         <motion.div className="app__skills-list">
