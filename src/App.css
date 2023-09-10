@@ -85,7 +85,7 @@
 
 /* .p-text */
 .p-text {
-  font-size: 0.8rem;
+  font-size: 1.5rem;
   text-align: left;
   color: var(--gray-color);
   line-height: 1.5;
@@ -113,7 +113,7 @@
 
 @media screen and (max-width: 450px) {
   .bold-text {
-    font-size: 0.9rem;
+    font-size: rem;
   }
 }
 
