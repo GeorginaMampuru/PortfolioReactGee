@@ -59,8 +59,9 @@
   }
   
   @media screen and (min-width: 2000px) {
-    .app__skills-item {
-      margin: 1rem 2rem;
+    .app__skills-item div {
+      width: 150px;
+      height: 150px;
     }
   
     .app__skills-item p {
@@ -86,7 +87,12 @@
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
-    margin-top: 2rem;
+  }
+  
+  @media screen and (max-width: 900px) {
+    .app__skills-exp {
+      margin-top: 2rem;
+    }
   }
   
   .app__skills-exp-item {

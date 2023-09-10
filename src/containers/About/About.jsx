@@ -6,29 +6,25 @@ import "./About.css";
 
 const abouts = [
   {
-    title: "Web Development",
+    title: "EDUCATION",
     description:
-      "I've got passion for creating beautiful websites and web applications",
+      "I completed my National Diploma in Computer Systems at CPUT in 2020 and am currently pursuing a Bachelor of Technology in Computer Engineering, which is set to be completed in 2024.",
     imgUrl: images.about01,
   },
   {
-    title: "Frontend Development",
+    title: "ACHIEVEMENTS",
+   
     description:
-      "I build user-facing features consisting of reusable components using React",
+      "During the challenging times of the COVID-19 pandemic, when there was a severe shortage of ventilators, we took it upon ourselves to create a prototype for a ventilator.",
     imgUrl: images.about02,
   },
   {
-    title: "Open Source",
+    title: "OPEN SOURCE",
     description:
-      "I enjoy contributing to open source projects and sharing knowledge",
+      "I find great satisfaction in actively participating in open source projects and sharing my knowledge with others. It's a rewarding experience that allows me to collaborate with a diverse community of developers and enthusiasts while also giving back to the broader tech community",
     imgUrl: images.about03,
   },
-  {
-    title: "UI Design",
-    description:
-      "I enjoy creating real websites and apps using Figma UI designs",
-    imgUrl: images.about04,
-  },
+  
 ];
 
 const About = () => {
