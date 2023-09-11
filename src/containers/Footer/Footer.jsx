@@ -1,32 +1,15 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useState } from 'react';
 
 import { images } from '../../constants';
 import { AppWrap, MotionWrap } from '../../wrapper';
-import emailjs from '@emailjs/browser'; 
+// import emailjs from '@emailjs'; 
+import emailjs from '@emailjs/browser';
+
 import './Footer.css';
 
+// eslint-disable-next-line react-refresh/only-export-components
 const Footer = () => {
-  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
-  const [isFormSubmitted, setIsFormSubmitted] = useState(false);
-  const [loading, setLoading] = useState(false);
-
-  const { username, email, message } = formData;
-
-  const handleChangeInput = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
-
-  const handleSubmit = () => {
-    setLoading(true);
-    // Here, you can perform any other actions you need, like validation or sending the form data to another service or API.
-
-    // After performing your desired actions, set the loading state to false and mark the form as submitted.
-    setLoading(false);
-    setIsFormSubmitted(true);
-  };
-  const form = useRef();
-
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -47,11 +30,11 @@ const Footer = () => {
       <div className="app__footer-cards">
         <div className="app__footer-card ">
           <img src={images.email} alt="email" />
-          <a href="mailto:hello@micael.com" className="p-text">hello@micael.com</a>
+          <a href="mailto:georginamampuru@gmail.com" className="p-text">georginamampuru@gmail.com</a>
         </div>
         <div className="app__footer-card">
           <img src={images.mobile} alt="phone" />
-          <a href="tel:+1 (123) 456-7890" className="p-text">+1 (123) 456-7890</a>
+          <a href="tel:+1 (123) 456-7890" className="p-text">+27 60 688 3521</a>
         </div>
       </div>
       {!isFormSubmitted ? (
