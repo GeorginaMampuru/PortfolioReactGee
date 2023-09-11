@@ -2,7 +2,7 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useEffect, useRef } from 'react';
 import Typed from 'typed.js';
-import { AppWrap, MotionWrap } from '../../wrapper';
+// import { AppWrap, MotionWrap } from '../../wrapper';
 import './HeroSection.css';
 
 
@@ -54,3 +54,8 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+// export default AppWrap(
+//   MotionWrap(About, "app__about"),
+//   "about",
+//   "app__whitebg"
+// );

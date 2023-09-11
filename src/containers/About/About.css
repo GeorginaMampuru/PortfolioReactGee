@@ -7,13 +7,14 @@
   .app__profiles {
     display: flex;
     justify-content: center;
+    justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
     margin-top: 2rem;
   }
   
   .app__profile-item {
-    width: 190px;
+    width: 250px;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;

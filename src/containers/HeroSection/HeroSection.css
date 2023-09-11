@@ -9,6 +9,7 @@
     min-height: 100vh;
     align-items: center;
     width: 100%;
+    
   }
   
   
@@ -44,7 +45,7 @@
     border-radius: 50%;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
     cursor: pointer;
-    margin-top: -300px;
+    margin-top: -370px;
   }
   
   .image img:hover {

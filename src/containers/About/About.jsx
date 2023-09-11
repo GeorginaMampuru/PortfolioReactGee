@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react";
 import { motion } from "framer-motion";
 import { AppWrap, MotionWrap } from "../../wrapper";
@@ -27,6 +28,7 @@ const abouts = [
   
 ];
 
+// eslint-disable-next-line react-refresh/only-export-components
 const About = () => {
   return (
     <>
@@ -55,6 +57,7 @@ const About = () => {
   );
 };
 
+// eslint-disable-next-line react-refresh/only-export-components
 export default AppWrap(
   MotionWrap(About, "app__about"),
   "about",

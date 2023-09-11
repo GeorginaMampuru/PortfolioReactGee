@@ -1,8 +1,10 @@
 /* eslint-disable jsx-a11y/control-has-associated-label */
 /* eslint-disable jsx-a11y/anchor-has-content */
 
+// eslint-disable-next-line no-unused-vars
 import React from 'react';
 
+// eslint-disable-next-line react/prop-types
 const NavigationDots = ({ active }) => (
   <div className="app__navigation">
     {['home', 'about', 'work', 'skills', 'contact'].map((item, index) => (
