@@ -1,5 +1,3 @@
-/* eslint-disable jsx-a11y/control-has-associated-label */
-/* eslint-disable jsx-a11y/anchor-has-content */
 
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
