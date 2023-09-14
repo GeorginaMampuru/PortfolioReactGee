@@ -119,7 +119,7 @@
     text-align: center;
     padding: 2rem 0;
     margin-top: 140px;
-    margin-left: -5px;
+    margin-left: -50px;
    
   }
   .content p{
@@ -132,7 +132,35 @@
 @media (max-width: 414px) {
  
   .content-container {
-    padding: 1rem;
- font-size: small;
+    flex-direction: column;
+    align-items: flex-start;
+   
+  }
+
+  .image {
+    flex: 1 1 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-right: 0;
+  }
+
+  .image img {
+    margin-right: 0;
+  }
+
+  .content {
+    flex: 1 1 100%;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 140px;
+    margin-left: -20px;
+
+   
+  }
+  .content p{
+    
+   font-size: 24px;
+   
   }
 }
