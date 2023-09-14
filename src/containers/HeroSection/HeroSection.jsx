@@ -1,4 +1,5 @@
 
+// eslint-disable-next-line no-unused-vars
 import React, { useEffect, useRef } from 'react';
 import Typed from 'typed.js';
 import './HeroSection.css';
@@ -21,19 +22,6 @@ const HeroSection = () => {
       typed.destroy();
     };
   }, []);
-  const handleDownloadClick = () => {
-   
-    const pdfUrl = './Georgina Mampuru - CV 2023.pdf';
-
-    // Create a temporary anchor element to trigger the download
-    const anchor = document.createElement('a');
-    anchor.href = pdfUrl;
-    anchor.download = 'Georgina_Mampuru_CV_2023.pdf';
-    anchor.click();
-
-  
-    anchor.remove();
-  };
 
   return (
     <section className="home" id="home">

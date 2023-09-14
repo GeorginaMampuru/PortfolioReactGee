@@ -1,5 +1,3 @@
-/* HeroSection.css */
-
 /* Hero Section */
 .home {
   position: relative;
@@ -10,8 +8,6 @@
   align-items: center;
   width: 100%;
 }
-
-
 
 .home::before {
   content: "";
@@ -30,27 +26,23 @@
   padding: 73px 2rem;
 }
 
-
 .image {
   flex: 1 1 30rem;
   z-index: 1;
   text-align: right;
-  margin-left:50rem;
-
 }
+
 .image img {
   max-width: 100%;
   height: auto;
   border-radius: 50%;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
   cursor: pointer;
-  margin-top: -370px;
 }
 
 .image img:hover {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
-
 
 .content {
   flex: 1 1 55%;
@@ -80,8 +72,6 @@
   color: rgb(6, 34, 244);
 }
 
-
-
 .resumebtn button {
   width: 231px;
   height: 45px;
@@ -97,60 +87,52 @@
   background-color: #444;
 }
 
-
-
-@media (max-width: 320px) {
-.content-container {
-  flex-direction: column;
-  align-items: flex-start;
+@media screen and (min-width: 1280px) {
+ 
+  .content-container {
+    padding: 1rem 2rem;
+    border-radius: 0.85rem;
+  }
 }
 
-.image {
-  flex: 1 1 100%;
-  justify-content: center;
-  align-items: center;
-  margin-top: 2rem;
-  margin-right: 10px;
-}
-
-.image img {
-  margin-right: 0;
-}
-
-.content {
-  flex: 1 1 100%;
-  text-align: center;
-  padding: 2rem 0;
-  margin-top: 200px;
-  font-size: 1px;
-}
-}
 @media (max-width: 768px) {
-.content-container {
-  flex-direction: column;
-  align-items: flex-start;
+
+  .content-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .image {
+    flex: 1 1 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-right: 0;
+  }
+
+  .image img {
+    margin-right: 0;
+  }
+
+  .content {
+    flex: 1 1 100%;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 140px;
+    margin-left: -5px;
+   
+  }
+  .content p{
+    
+   font-size: 24px;
+   
+  }
 }
 
-.image {
-  flex: 1 1 100%;
-  justify-content: center;
-  align-items: center;
-  margin-top: 2rem;
-  margin-right: 162px;
+@media (max-width: 414px) {
+ 
+  .content-container {
+    padding: 1rem;
+ font-size: small;
+  }
 }
-
-.image img {
-  margin-right: 0;
-}
-
-.content {
-  flex: 1 1 100%;
-  text-align: center;
-  padding: 2rem 0;
-  margin-top: 140px;
-}
-}
-
-
-
-

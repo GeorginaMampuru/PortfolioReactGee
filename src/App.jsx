@@ -11,8 +11,8 @@ const App = () => (
     <Navbar />
     <HeroSection />
     <About />
-    <Work />
-    <Skills />
+    {/* <Work />
+    <Skills /> */}
     {/* <Footer /> */}
   </div>
 );
