@@ -5,6 +5,48 @@ import { motion } from 'framer-motion';
 import { AppWrap, MotionWrap } from '../../wrapper';
 import './Work.css'; 
 const Work = () => {
+  const worksData = [
+    // {
+    //   title: "My Portfolio Website",
+    //   description:
+    //     "A website about my skills and work experience in Web Development, which I built using React",
+    //   projectLink: "",
+    //   codeLink: "",
+    //   imgUrl: images.work01,
+    //   tags: ["React", "All"],
+    // },
+    {
+      title: "Mzamomtsha Primary School",
+      description:
+        "Webstite For A Primary School To Showcase The Schools Success And Expasion And Footprint",
+      projectLink: "https://luxury-daifuku-57e814.netlify.app/",
+      codeLink: "https://github.com/GeorginaMampuru/Mzamomtsha",
+      imgUrl: images.work02,
+      tags: ["React", "All"],
+    },
+    {
+      title: "Finacial Calculator",
+      description:
+        "Finance Calculator Is A Python Program With A GUI That Allows Users To Perform Financial Calculations..",
+      projectLink: "https://github.com/GeorginaMampuru/PythonProjects/tree/main/FinaceCalculator",
+      codeLink: "https://github.com/GeorginaMampuru/PythonProjects/tree/main/FinaceCalculator",
+      imgUrl: images.work03,
+      tags: ["React", "All"],
+    },
+    {
+      title: "React ChatApp",
+      description: "The Chat Bot Is A Web Application That Uses React, Node.Js, And Chat Engine To Create A Real-Time Chat Interface With An AI-Powered Chat Bot.",
+      projectLink: "https://github.com/GeorginaMampuru/ChatBotWithReact",
+      codeLink: "https://github.com/GeorginaMampuru/ChatBotWithReact",
+      imgUrl: images.about02,
+      tags: ["HTML, CSS, JS", "All"],
+    },
+    
+  ];
+
+
+
+
   const [filterWork, setFilterWork] = useState([]);
   const [activeFilter, setActiveFilter] = useState('All');
   const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });

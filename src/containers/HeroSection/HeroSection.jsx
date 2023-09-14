@@ -1,8 +1,6 @@
-// HeroSection.jsx
-// eslint-disable-next-line no-unused-vars
+
 import React, { useEffect, useRef } from 'react';
 import Typed from 'typed.js';
-// import { AppWrap, MotionWrap } from '../../wrapper';
 import './HeroSection.css';
 
 
@@ -23,6 +21,19 @@ const HeroSection = () => {
       typed.destroy();
     };
   }, []);
+  const handleDownloadClick = () => {
+   
+    const pdfUrl = './Georgina Mampuru - CV 2023.pdf';
+
+    // Create a temporary anchor element to trigger the download
+    const anchor = document.createElement('a');
+    anchor.href = pdfUrl;
+    anchor.download = 'Georgina_Mampuru_CV_2023.pdf';
+    anchor.click();
+
+  
+    anchor.remove();
+  };
 
   return (
     <section className="home" id="home">
@@ -33,13 +44,13 @@ const HeroSection = () => {
 
           <div className="box-container">
             <div className="box">
-              <p><span>email:</span> georginamampuru@gmail.com</p>
+              <p><span>Email:</span> georginamampuru@gmail.com</p>
             </div>
           </div>
           <div className="resumebtn">
           <a onClick={() => window.open('./Georgina Mampuru - CV 2023.pdf')} className="btn">
               <button>DownloadCV</button>
-              {/* <i className="fas fa-chevron-right"></i> */}
+            
             </a>
           </div>
           
@@ -54,8 +65,3 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
-// export default AppWrap(
-//   MotionWrap(About, "app__about"),
-//   "about",
-//   "app__whitebg"
-// );
