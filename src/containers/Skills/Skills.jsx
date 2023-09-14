@@ -39,79 +39,54 @@ const Skills = () => {
   //   },
   // ];
 
-  // const skillsData = [
-  //   {
-  //     name: "HTML",
-  //     icon: images.html,
-  //   },
-  //   {
-  //     name: "CSS",
-  //     icon: images.css,
-  //   },
-  //   {
-  //     name: "JavaScript",
-  //     icon: images.javascript,
-  //   },
-  //   {
-  //     name: "React",
-  //     icon: images.react,
-  //   },
-  //   {
-  //     name: "TypeScript",
-  //     icon: images.typescript,
-  //   },
-  //   {
-  //     name: "Git",
-  //     icon: images.git,
-  //   },
-  //   {
-  //     name: "Sass",
-  //     icon: images.sass,
-  //   },
-  //   {
-  //     name: "Figma",
-  //     icon: images.figma,
-  //   },
-  //   {
-  //     name: "Material UI",
-  //     icon: images.mu5,
-  //   },
-  //   {
-  //     name: "Storybook",
-  //     icon: images.storybook,
-  //   },
-  //   {
-  //     name: "APIs",
-  //     icon: images.api,
-  //   },
-  //   {
-  //     name: "Notion",
-  //     icon: images.notion,
-  //   },
-  //   {
-  //     name: "Jira",
-  //     icon: images.jira,
-  //   },
-  //   {
-  //     name: "Slack",
-  //     icon: images.slack,
-  //   },
-  //   {
-  //     name: "Zoom",
-  //     icon: images.zoom,
-  //   },
-  //   {
-  //     name: "MacOS",
-  //     icon: images.macOS,
-  //   },
-  // ];
-  // const [experiences, setExperiences] = useState([]);
-  // const [skills, setSkills] = useState([]);
+  const skillsData = [
+    {
+      name: "HTML",
+      icon: images.html,
+    },
+    {
+      name: "CSS",
+      icon: images.css,
+    },
+    {
+      name: "JavaScript",
+      icon: images.javascript,
+    },
+    {
+      name: "React",
+      icon: images.react,
+    },
+    {
+      name: "TypeScript",
+      icon: images.typescript,
+    },
+    {
+      name: "Git",
+      icon: images.git,
+    },
+
+    {
+      name: "Figma",
+      icon: images.figma,
+    },
+    
+    {
+      name: "Slack",
+      icon: images.slack,
+    },
+    {
+      name: "Zoom",
+      icon: images.zoom,
+    },
+    
+  ];
+  const [experiences, setExperiences] = useState([]);
+  const [skills, setSkills] = useState([]);
 
 
   return (
     <>
-      <h2 className="head-text">Tech Stack & Experiences</h2>
+      
 
       <h2 className="head-text">Tech Stack & Experiences</h2>
 
@@ -134,7 +109,7 @@ const Skills = () => {
           </motion.div>
         ))}
       </motion.div>
-         
+        
         <div className="app__skills-exp">
           {experiences.map((experience) => (
             <motion.div
