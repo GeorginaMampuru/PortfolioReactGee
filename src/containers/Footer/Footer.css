@@ -91,7 +91,7 @@
   }
   .app__footer-form button {
     padding: 1rem 2rem;
-    border-radius: 10px;
+    border-radius: 30px;
     border: none;
     background-color: var(--secondary-color);
     font-weight: 500;
@@ -101,6 +101,10 @@
     font-family: var(--font-base);
     transition: cubic-bezier(0.55, 0.085, 0.68, 0.53);
     cursor: pointer;
+    
+  }
+  .app__footer-form .captcha {
+    background-color: none;
   }
   .app__footer-form button:hover {
     background-color: #2430af;
@@ -112,3 +116,11 @@
     }
   }
   
+
+.app__footer-form div {
+  width: 100%;
+  margin: 0.75rem 0;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  transition: all 0.3s ease-in-out;}
