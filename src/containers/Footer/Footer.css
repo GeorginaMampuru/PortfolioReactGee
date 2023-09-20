@@ -124,3 +124,6 @@
   cursor: pointer;
   background-color: var(--primary-color);
   transition: all 0.3s ease-in-out;}
+  .p-text {
+    font-size: 1rem;
+  }
