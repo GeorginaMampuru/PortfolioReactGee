@@ -163,3 +163,29 @@
 
 
 
+/* HeroSection.css */
+
+
+/* Responsive styles for smaller screens (e.g., tablets and mobile) */
+@media (max-width: 768px) {
+  .content-container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .content {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .image {
+    margin-top: 1rem;
+  }
+}
+
+/* Additional responsive styles for even smaller screens (e.g., mobile phones) */
+@media (max-width: 480px) {
+  .content {
+    font-size: 16px;
+  }
+}
