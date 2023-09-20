@@ -65,6 +65,7 @@ const experienceData = [
   },
 ];
 
+// eslint-disable-next-line react-refresh/only-export-components
 const Skills = () => {
   const [experiences] = useState(experienceData);
   const [skills] = useState(skillsData);
@@ -72,7 +73,6 @@ const Skills = () => {
   return (
     <>
       <h2 className="head-text">Skills &<span>Experiences</span></h2>
-
 
       <div className="app__skills-container">
         <motion.div className="app__skills-list">
@@ -95,20 +95,39 @@ const Skills = () => {
         </motion.div>
         <div className="app__skills-exp">
           {experiences.map((experience, index) => (
-            <motion.div
-              className="app__skills-exp-item"
-              key={index}
-            >
+            <div className="app__skills-exp-item" key={index}>
               <div className="app__skills-exp-year">
                 <p className="bold-text">{experience.time}</p>
               </div>
-              <motion.div className="app__skills-exp-works">
-                <div className="app__skills-exp-work">
+              <div className="app__skills-exp-works">
+                <div
+                  className="app__skills-exp-work"
+                  style={{ position: 'relative', cursor: 'pointer' }}
+                >
                   <h4 className="bold-text">{experience.name}</h4>
-                  <p className="p-text">{experience.company}</p>
+                  <p
+                    className="p-text"
+                    onMouseEnter={() => {
+                      const tooltip = document.getElementById(`tooltip-${index}`);
+                      tooltip.style.opacity = '1';
+                    }}
+                    onMouseLeave={() => {
+                      const tooltip = document.getElementById(`tooltip-${index}`);
+                      tooltip.style.opacity = '0';
+                    }}
+                  >
+                    {experience.company}
+                  </p>
+                  {/* Tooltip */}
+                  <div
+                    id={`tooltip-${index}`}
+                    className="skills-tooltip"
+                  >
+                    {experience.description}
+                  </div>
                 </div>
-              </motion.div>
-            </motion.div>
+              </div>
+            </div>
           ))}
         </div>
       </div>

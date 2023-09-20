@@ -36,7 +36,7 @@ const HeroSection = () => {
             </div>
           </div>
           <div className="resumebtn">
-          <a onClick={() => window.open('./Georgina Mampuru - CV 2023.pdf')} className="btn">
+          <a onClick={() => window.open('https://drive.google.com/file/d/1nvHgyyLs2VMWoS4BssG-TidolVHPAsG7/view?usp=sharing')} className="btn">
               <button>DownloadCV</button>
             
             </a>
