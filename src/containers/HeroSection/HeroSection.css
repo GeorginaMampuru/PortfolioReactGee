@@ -209,3 +209,22 @@
     font-size: 16px;
   }
 }
+.content-container {
+  /* Existing styles for desktop/large screens */
+
+  @media (max-width: 768px) {
+    /* Styles for screens smaller than 768px (e.g., tablets) */
+    /* You can adjust the content layout for smaller screens here */
+    flex-direction: column;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  @media (max-width: 480px) {
+    /* Styles for screens smaller than 480px (e.g., mobile phones) */
+    /* You can make further adjustments for very small screens here */
+    .content {
+      font-size: 16px;
+    }
+  }
+}

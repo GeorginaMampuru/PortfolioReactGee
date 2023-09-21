@@ -11,6 +11,7 @@
     border: 1px solid rgba(255, 255, 255, 0.18);
     position: fixed;
     z-index: 2;
+    height: 107px
   
   }
   
@@ -21,7 +22,7 @@
   }
   
   .app__navbar-logo img {
-    width: 108px;
+    width: 100%;
      
   }
   

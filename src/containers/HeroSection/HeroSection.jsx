@@ -3,7 +3,8 @@ import React, { useEffect, useRef } from 'react';
 import Typed from 'typed.js';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { motion } from 'framer-motion'; // Import Framer Motion
+import { motion } from 'framer-motion'; 
+import { AppWrap } from '../../wrapper';
 import './HeroSection.css';
 
 const scaleVariants = {
@@ -76,4 +77,5 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;
+// eslint-disable-next-line react-refresh/only-export-components
+export default AppWrap(HeroSection, 'home');
