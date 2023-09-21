@@ -4,7 +4,8 @@ import { motion } from 'framer-motion';
 import { AppWrap, MotionWrap } from '../../wrapper';
 import { images } from "../../constants";
 import './Skills.css';
-
+import 'react-tippy/dist/tippy.css';
+import { Tooltip } from 'react-tippy'
 const skillsData = [
   {
     name: "HTML",
@@ -23,12 +24,32 @@ const skillsData = [
     icon: images.react,
   },
   {
-    name: "Git",
+    name: "Git VCS",
     icon: images.git,
   },
   {
     name: "Figma",
     icon: images.figma,
+  },
+  {
+    name: "Python",
+    icon: images.python,
+  },
+  {
+    name: "Node",
+    icon: images.node,
+  },
+  {
+    name: "Wordpress",
+    icon: images.wordpress,
+  },
+  {
+    name: "PhpmyAdmin",
+    icon: images.phpmyadmin,
+  },
+  {
+    name: "PostgreSQL",
+    icon: images.posgress,
   },
 ];
 
@@ -71,9 +92,7 @@ const Skills = () => {
 
   return (
     <>
-
       <h2 className="head-text">Skills &<span>Experiences</span></h2>
-
 
       <div className="app__skills-container">
         <motion.div className="app__skills-list">
@@ -108,6 +127,15 @@ const Skills = () => {
                   <h4 className="bold-text">{experience.name}</h4>
                   <p className="p-text">{experience.company}</p>
                 </div>
+                <Tooltip
+                  title={experience.description}
+                  position="top"
+                  arrow={true}
+                  trigger="mouseenter"
+                  interactive={true}
+                >
+                  <div className="tooltip-trigger">Hover me</div>
+                </Tooltip>
               </motion.div>
             </motion.div>
           ))}
