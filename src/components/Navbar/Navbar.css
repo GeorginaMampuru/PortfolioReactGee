@@ -159,4 +159,9 @@
       display: none;
     }
   }
+  @media screen and (min-width: 900px) {
+    .app__navbar-logo img {
+      width: 10%;
+    }
+  }
   
