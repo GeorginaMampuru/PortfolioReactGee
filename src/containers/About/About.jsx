@@ -9,8 +9,8 @@ const abouts = [
   {
     title: "EDUCATION",
     description:
-      "I completed my National Diploma in Computer Systems at CPUT in 2020 and am currently pursuing a Bachelor of Technology in Computer Engineering, which is set to be completed in 2024.",
-    imgUrl: images.about01,
+      "I completed my National Diploma in Computer Systems at CPUT in 2020 and am currently pursuing a BET in Computer Engineering, which is set to be completed in 2024.",
+    imgUrl: images.about05,
   },
   {
     title: "ACHIEVEMENTS",
@@ -22,7 +22,7 @@ const abouts = [
   {
     title: "OPEN SOURCE",
     description:
-      "I find great satisfaction in actively participating in open source projects and sharing my knowledge with others. It's a rewarding experience that allows me to collaborate with a diverse community of developers and enthusiasts while also giving back to the broader tech community",
+      "I find fulfillment in contributing to open source projects, sharing knowledge, and engaging with a diverse tech community, offering a rewarding experience of giving back",
     imgUrl: images.about03,
   },
   

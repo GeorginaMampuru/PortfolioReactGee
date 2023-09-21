@@ -16,7 +16,7 @@ const Work = () => {
       projectLink: 'https://luxury-daifuku-57e814.netlify.app/',
       codeLink: 'https://github.com/GeorginaMampuru/Mzamomtsha',
       imgUrl: images.work02,
-      tags: ['HTML','JS','CSS', 'All'],
+      tags: ['WebApp', 'All'],
     },
     {
       title: 'Financial Calculator',
@@ -32,7 +32,7 @@ const Work = () => {
     {
       title: 'React ChatApp',
       description:
-        'The Chat Bot Is A Web Application That Uses React, Node.Js, And Chat Engine To Create A Real-Time Chat Interface With An AI-Powered Chat Bot.',
+        'A web application utilizing React, Node.js, and Chat Engine to enable real-time chatting with an AI-powered chat bot',
       projectLink: 'https://github.com/GeorginaMampuru/ChatBotWithReact',
       codeLink: 'https://github.com/GeorginaMampuru/ChatBotWithReact',
       imgUrl: images.work01,
@@ -48,15 +48,16 @@ const Work = () => {
 
     if (item === 'All') {
       setFilterWork(works);
-    } else if (item === 'UI/UX / Figma') {
-      // Filter based on tags that match 'UI/UX / Figma'.
+    } else if (item === 'UI/UX / Figma') { 
       setFilterWork(works.filter((work) => work.tags.includes('Figma')));
     } else if (item === 'Web App') {
-      // Filter based on tags that match 'Web App'.
-      setFilterWork(works.filter((work) => work.tags.includes('React')));
+      setFilterWork(works.filter((work) => work.tags.includes('WebApp')));
     } else if (item === 'React JS') {
-      // Filter based on tags that match 'React JS'.
       setFilterWork(works.filter((work) => work.tags.includes('React')));
+    }
+    // eslint-disable-next-line no-dupe-else-if
+    else if (item === 'Applications') {
+      setFilterWork(works.filter((work) => work.tags.includes('Python')));
     }
   };
 
@@ -67,7 +68,7 @@ const Work = () => {
       </h2>
 
       <div className="app__work-filter">
-        {['UI/UX / Figma', 'Web App', 'React JS', 'All'].map((item, index) => (
+        {['Applications', 'Web App', 'React JS', 'All'].map((item, index) => (
           <div
             key={index}
             onClick={() => handleWorkFilter(item)}

@@ -39,21 +39,22 @@ const HeroSection = () => {
     <section className="home" id="home">
       <div className="container">
         <div className="row">
-          <div className="col-lg-6">
+          <div >
             <motion.div
               variants={scaleVariants} // Apply the animation variants here
               initial="whileInView"
               animate="whileInView"
               className="content"
             >
-              <h2>Hi There,<br/> I am Georgina  <span>Mampuru</span></h2>
-              <p>i am into <span className="typing-text" ref={typingRef}></span></p>
+              <h2>Hi There<span>👋</span>,<br/> I am Georgina  <span>Mampuru</span></h2>
+              <p>I am into <span className="typing-text" ref={typingRef}></span></p>
 
               <div className="box-container">
                 <div className="box">
                   <p>
+                  <FontAwesomeIcon icon={faEnvelope} size="lg" className="icon" />
                     <span>Email:</span> georginamampuru@gmail.com{' '}
-                    <FontAwesomeIcon icon={faEnvelope} size="lg" className="icon" />
+                   
                   </p>
                 </div>
               </div>

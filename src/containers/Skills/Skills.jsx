@@ -51,6 +51,7 @@ const skillsData = [
     name: "PostgreSQL",
     icon: images.posgress,
   },
+  
 ];
 
 const experienceData = [
@@ -64,7 +65,7 @@ const experienceData = [
     name: "Junior Software Developer",
     company: "UVU Africa | CapaCiTi- Intern",
     description: "I've crafted websites with HTML, CSS, and JavaScript, and engineered tax calculators in Java and financial tools in Python, showcasing versatile skills in web development and finance",
-    time: "Jan 2023 - July 2023"
+    time: "Jan 2023 - Jul 2023"
   },
   {
     name: "Technical Operations Analyst",
@@ -76,7 +77,7 @@ const experienceData = [
     name: "Space Technology Intern",
     company: "Astrofica Technologies",
     description: "Developed and maintained a website using HTML5, CSS, JavaScript, SQL, and version control with Git and GitHub.",
-    time: "Sept 2020 - May 2022"
+    time: "Feb 2020 - Mar 202"
   },
   {
     name: "Computer Systems Engineering Learner Technician",
@@ -86,6 +87,7 @@ const experienceData = [
   },
 ];
 
+// eslint-disable-next-line react-refresh/only-export-components
 const Skills = () => {
   const [experiences] = useState(experienceData);
   const [skills] = useState(skillsData);
@@ -127,15 +129,18 @@ const Skills = () => {
                   <h4 className="bold-text">{experience.name}</h4>
                   <p className="p-text">{experience.company}</p>
                 </div>
-                <Tooltip
-                  title={experience.description}
-                  position="top"
-                  arrow={true}
-                  trigger="mouseenter"
-                  interactive={true}
-                >
-                  <div className="tooltip-trigger">Hover me</div>
-                </Tooltip>
+              <Tooltip
+              title={experience.description}
+              position={window.innerWidth > 900 ? "top" : "bottom"}
+              arrow={window.innerWidth > 900}
+              trigger={window.innerWidth > 900 ? "mouseenter" : "click"}
+              interactive={true}
+            >
+              <div className="tooltip-trigger">
+                {window.innerWidth > 900 ? "See More" : "Tap for More"}
+              </div>
+            </Tooltip>
+
               </motion.div>
             </motion.div>
           ))}

@@ -10,6 +10,7 @@ import react from '../assets/react.png';
 import about02 from '../assets/about02.png';
 import about03 from '../assets/about03.png';
 import about04 from '../assets/about04.png';
+import about05 from '../assets/about05.png';
 import circle from '../assets/circle.svg';
 import logo from '../assets/logo.png';
 import work02 from '../assets/work02.png';
@@ -19,6 +20,7 @@ import node from '../assets/node.png';
 import wordpress from '../assets/wordpress.png';
 import phpmyadmin from '../assets/phpmyadmin.png';
 import posgress from '../assets/posgress.png';
+import amazon from '../assets/amazon.png';
 export default {
   email,
   wordpress,
@@ -36,10 +38,11 @@ export default {
   about02,
   about03,
   about04,
+  about05,
   circle,
   logo,
   work02,
   work01,
   work03,
-  
+  amazon,
 };
