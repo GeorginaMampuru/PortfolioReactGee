@@ -18,6 +18,7 @@ const scaleVariants = {
   },
 };
 
+// eslint-disable-next-line react-refresh/only-export-components
 const HeroSection = () => {
   const typingRef = useRef(null);
 

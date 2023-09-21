@@ -1,6 +1,6 @@
 /* HeroSection.css */
 
-/* Hero Section */
+/* Base styles for desktop/large screens */
 .home {
   position: relative;
   display: flex;
@@ -10,8 +10,6 @@
   align-items: center;
   width: 100%;
 }
-
-
 
 .home::before {
   content: "";
@@ -30,14 +28,13 @@
   padding: 73px 2rem;
 }
 
-
 .image {
   flex: 1 1 30rem;
   z-index: 1;
   text-align: right;
-  margin-left:50rem;
-
+  margin-left: 50rem;
 }
+
 .image img {
   max-width: 100%;
   height: auto;
@@ -50,7 +47,6 @@
 .image img:hover {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
-
 
 .content {
   flex: 1 1 55%;
@@ -80,8 +76,6 @@
   color: rgb(6, 34, 244);
 }
 
-
-
 .resumebtn button {
   width: 231px;
   height: 45px;
@@ -97,134 +91,38 @@
   background-color: #444;
 }
 
-
-@media  screen and(min-width: 390px)
-{
-.content {
-    flex: 1 1 100%;
+/* Responsive styles for tablets (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  .home {
+    justify-content: center;
     text-align: center;
-    padding: 2rem 0;
-    margin-top: 140px;
-}
-}
-
-@media screen and (min-width: 390px) {
-.content-container {
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.image {
-  flex: 1 1 100%;
-  justify-content: center;
-  align-items: center;
-  margin-top: 2rem;
-  margin-right: 10px;
-}
-
-.image img {
-  margin-right: 0;
-}
-
-.content {
-  flex: 1 1 100%;
-  text-align: center;
-  padding: 2rem 0;
-  margin-top: 200px;
-  font-size: 1px;
-}
-}
-@media (max-width: 768px) {
-.content-container {
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.image {
-  flex: 1 1 100%;
-  justify-content: center;
-  align-items: center;
-  margin-top: 2rem;
-  margin-right: 162px;
-}
-
-.image img {
-  margin-right: 0;
-}
-
-.content {
-  flex: 1 1 100%;
-  text-align: center;
-  padding: 2rem 0;
-  margin-top: 140px;
-}
-}
-
-
-
-
-/* HeroSection.css */
-
-/* Base styles for desktop/large screens */
-.content-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.content {
-  flex: 1;
-  padding: 2rem;
-  text-align: left;
-}
-
-.image {
-  flex: 1;
-  text-align: center;
-}
-
-/* Responsive styles for smaller screens (e.g., tablets and mobile) */
-@media (max-width: 768px) {
-  .content-container {
-    flex-direction: column;
-    padding: 1rem;
   }
 
-  .content {
-    padding: 1rem;
-    text-align: center;
+  .content-container {
+    flex-direction: column;
+    padding: 2rem;
   }
 
   .image {
-    margin-top: 1rem;
-  }
-}
-
-/* Additional responsive styles for even smaller screens (e.g., mobile phones) */
-@media (max-width: 480px) {
-  .content {
-    font-size: 16px;
-  }
-}
-.content-container {
-  /* Existing styles for desktop/large screens */
-
-  @media (max-width: 768px) {
-    /* Styles for screens smaller than 768px (e.g., tablets) */
-    /* You can adjust the content layout for smaller screens here */
-    flex-direction: column;
-    padding: 1rem;
+    margin-left: 0;
     text-align: center;
   }
 
-  @media (max-width: 480px) {
-    /* Styles for screens smaller than 480px (e.g., mobile phones) */
-    /* You can make further adjustments for very small screens here */
-    .content {
-      font-size: 16px;
-    }
+  .image img {
+    margin-top: 1rem;
+  }
+
+  .content {
+    margin-top: 2rem;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .content h2 {
+    font-size: 2rem;
+  }
+
+  .resumebtn {
+    margin-top: 2rem;
   }
 }
