@@ -67,7 +67,7 @@ const HeroSection = () => {
               </div>
             </motion.div>
           </div>
-          <div className="col-lg-6">
+          <div >
             <div className="image">
               <img src="./profileHero.png" alt="Georgina Mampuru" className="img-fluid" />
             </div>

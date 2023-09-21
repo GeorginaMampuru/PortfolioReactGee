@@ -11,7 +11,7 @@
     border: 1px solid rgba(255, 255, 255, 0.18);
     position: fixed;
     z-index: 2;
-    height: 107px
+    height: 120px
   
   }
   
@@ -22,7 +22,8 @@
   }
   
   .app__navbar-logo img {
-    width: 100%;
+    width: 80%;
+    padding: 32px
      
   }
   
@@ -90,9 +91,10 @@
   }
   
   .app__navbar-menu svg {
-    width: 70%;
+    width: 0%;
     height: 70%;
     color: var(--white-color);
+   
   }
   
   .app__navbar-menu div {
@@ -102,7 +104,7 @@
     right: 0;
     z-index: 5;
     padding: 1rem;
-    width: 80%;
+    width: 40%;
     height: 100vh;
     display: flex;
     justify-content: flex-end;
@@ -113,6 +115,7 @@
     background-size: cover;
     background-repeat: repeat;
     box-shadow: 0px 0px 20px rgba(168, 168, 168, 0.15);
+    border-radius: 0px 0px  0px 300px;
   }
   
   .app__navbar-menu div svg {

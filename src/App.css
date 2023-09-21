@@ -51,6 +51,7 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-end;
+  font-size: 10px;
 }
 
 .copyright p {
