@@ -16,7 +16,7 @@ const abouts = [
     title: "ACHIEVEMENTS",
    
     description:
-      "During the challenging times of the COVID-19 pandemic, when there was a severe shortage of ventilators, we took it upon ourselves to create a prototype for a ventilator.",
+      "During the challenging times of the COVID-19 pandemic, when there was a severe shortage of ventilators, we took it upon ourselves to create a prototype for a ventilator. <a href='https://openbooks.uct.ac.za/uct/catalog/view/40/66/2265' target='_blank'>SEE More of the prototype</a>",
     imgUrl: images.about02,
   },
   {
@@ -32,7 +32,7 @@ const abouts = [
 const About = () => {
   return (
     <>
-     <h2 className="head-text">About <span>Me</span></h2>
+      <h2 className="head-text">About <span>Me</span></h2>
 
       <div className="app__profiles">
         {abouts.map((about, index) => (
@@ -47,9 +47,12 @@ const About = () => {
             <h2 className="bold-text" style={{ marginTop: 20 }}>
               {about.title}
             </h2>
-            <p className="p-text" style={{ marginTop: 10 }}>
-              {about.description}
-            </p>
+           
+            <p
+              className="p-text"
+              style={{ marginTop: 10 }}
+              dangerouslySetInnerHTML={{ __html: about.description }}
+            ></p>
           </motion.div>
         ))}
       </div>
@@ -61,5 +64,5 @@ const About = () => {
 export default AppWrap(
   MotionWrap(About, "app__about"),
   "about",
-  "app__whitebg"
-);
+  "app__whitebg" 
+); 
