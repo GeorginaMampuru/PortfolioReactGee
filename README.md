@@ -54,7 +54,7 @@ To run this portfolio website locally, follow these steps:
 
 1. Clone the repository:
 
-   ```bash
+   ```
    git clone https://github.com/GeorginaMampuru/PortfolioReactGee.git
    cd PortfolioReactGee
    npm install
@@ -62,7 +62,7 @@ To run this portfolio website locally, follow these steps:
    Open your web browser and visit http://localhost:5173/ to view the website locally.```
   
   ## Firebase Deployment
-        ```bash
+        ```
             npm install -g firebase-tools
             firebase login
             firebase init
