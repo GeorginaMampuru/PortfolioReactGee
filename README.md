@@ -34,10 +34,10 @@ https://github.com/GeorginaMampuru/ChatBotWithReact/blob/main/README.md
 Here are some of my key skills and expertise:
 
 - Front-end Development: HTML, CSS, JavaScript, React
-- Back-end Development: Node.js, Express, Python 
+- Back-end Development: Firebase
 - UI/UX Design: Figma
-- Database Management: Firebase,PostgreSQL
-- Project Management: Agile, Scrum(Standups),
+- Database Management: Firebase
+- Project Management: Scrum(Standups)
 
 
 ## Contact
