@@ -11,7 +11,6 @@
     border: 1px solid rgba(255, 255, 255, 0.18);
     position: fixed;
     z-index: 2;
-    height: 120px
   
   }
   
@@ -22,8 +21,7 @@
   }
   
   .app__navbar-logo img {
-    width: 80%;
-    padding: 32px
+    width: 108px;
      
   }
   
@@ -80,7 +78,7 @@
   }
   
   .app__navbar-menu {
-    width: 30%;
+    width: 47px;
     height: 40px;
     border-radius: 50%;
     position: relative;
@@ -94,7 +92,6 @@
     width: 70%;
     height: 70%;
     color: var(--white-color);
-   
   }
   
   .app__navbar-menu div {
@@ -104,7 +101,7 @@
     right: 0;
     z-index: 5;
     padding: 1rem;
-    width: 40%;
+    width: 80%;
     height: 100vh;
     display: flex;
     justify-content: flex-end;
@@ -115,7 +112,7 @@
     background-size: cover;
     background-repeat: repeat;
     box-shadow: 0px 0px 20px rgba(168, 168, 168, 0.15);
-    border-radius: 0px 0px  0px 350px;
+    border-radius: 0px 0px  0px 450px;
   }
   
   .app__navbar-menu div svg {
@@ -157,11 +154,6 @@
   @media screen and (min-width: 900px) {
     .app__navbar-menu {
       display: none;
-    }
-  }
-  @media screen and (min-width: 900px) {
-    .app__navbar-logo img {
-      width: 10%;
     }
   }
   

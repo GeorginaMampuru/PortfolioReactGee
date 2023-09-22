@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { motion } from 'framer-motion'; 
 import { AppWrap } from '../../wrapper';
+
 import './HeroSection.css';
 
 const scaleVariants = {
@@ -39,7 +40,7 @@ const HeroSection = () => {
 
   return (
     <section className="home" id="home">
-      <div className="container">
+      <div className="container" style={{ background: 'url("../../assets/bgWhite.png")' }}>
         <div className="row">
           <div >
             <motion.div

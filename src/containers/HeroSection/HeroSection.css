@@ -9,6 +9,7 @@
   min-height: 100vh;
   align-items: center;
   width: 100%;
+  
 }
 
 .home::before {
@@ -25,6 +26,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 73px 2rem;
+  background: url('../../assets/bgWhite.png');
 }
 
 .image {
@@ -124,7 +126,6 @@
   }
   .content p {
     font-size: 1.2rem;
-    padding-top: 2px;
   }
   .resumebtn {
     margin-top: 2rem;
