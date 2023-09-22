@@ -16,7 +16,7 @@ Welcome to my portfolio website! This is where I showcase my work, skills, and e
 
 I'm Georgina Mampuru, a passionate and dedicated web developer with experience in building beautiful and functional web applications.
 
-[welcompage](https://github.com/GeorginaMampuru/PortfolioReactGee/assets/66384787/5e7ef1c0-7f1c-42a9-ac4e-e31d65312473)
+[welcompage] (https://github.com/GeorginaMampuru/PortfolioReactGee/assets/66384787/5e7ef1c0-7f1c-42a9-ac4e-e31d65312473)
 
 
 ## Projects
