@@ -16,41 +16,88 @@ const Footer = () => {
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
   const [recaptchaValue, setRecaptchaValue] = useState(null); // State to store reCAPTCHA value
+  const [validationErrors, setValidationErrors] = useState({
+    username: '',
+    email: '',
+    recaptcha: '', // New state for reCAPTCHA validation
+  });
 
   const { username, email, message } = formData;
 
   const handleChangeInput = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
+
+    // Reset validation error for the current input field
+    setValidationErrors({ ...validationErrors, [name]: '' });
   };
 
   const handleRecaptchaChange = (value) => {
     setRecaptchaValue(value); // Store the reCAPTCHA value when it changes
+
+    // Reset reCAPTCHA validation error
+    setValidationErrors({ ...validationErrors, recaptcha: '' });
   };
 
   const handleSubmit = () => {
     setLoading(true);
 
-    if (recaptchaValue) {
-      // Send the email using EmailJS
-      emailjs
-        .send('service_wloglyp', 'template_8y0rznn', formData, 'Bwm5Pu7SHOLV3EAxk') // Replace with your actual service, template, and user IDs
-        .then((result) => {
-          console.log(result.text);
-          setIsFormSubmitted(true);
-        })
-        .catch((error) => {
-          console.log(error.text);
-        });
-    } else {
-      alert('Please complete the reCAPTCHA.');
+    // Basic validation
+    if (!username || !email || !message) {
+      setValidationErrors({
+        username: !username ? 'Please enter your name.' : '',
+        email: !email ? 'Please enter your email.' : '',
+        recaptcha: '', // Clear reCAPTCHA validation error
+      });
       setLoading(false);
+      return;
     }
+
+    // Email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      setValidationErrors({
+        ...validationErrors,
+        email: 'Please enter a valid email address.',
+        recaptcha: '', // Clear reCAPTCHA validation error
+      });
+      setLoading(false);
+      return;
+    }
+
+    // ReCAPTCHA validation
+    if (!recaptchaValue) {
+      setValidationErrors({
+        ...validationErrors,
+        recaptcha: 'Please complete the reCAPTCHA.',
+      });
+      setLoading(false);
+      return;
+    }
+
+    // Clear validation errors for all fields
+    setValidationErrors({
+      username: '',
+      email: '',
+      recaptcha: '', 
+    });
+
+    // Continue with form submission
+    // Send the email using EmailJS
+    emailjs
+      .send('service_wloglyp', 'template_8y0rznn', formData, 'Bwm5Pu7SHOLV3EAxk') 
+      .then((result) => {
+        console.log(result.text);
+        setIsFormSubmitted(true);
+      })
+      .catch((error) => {
+        console.log(error.text);
+      });
   };
 
   return (
     <>
-       <h2 className="head-text">Contact <span>Me</span></h2>
+      <h2 className="head-text">Contact <span>Me</span></h2>
 
       <div className="app__footer-cards">
         <div className="app__footer-card ">
@@ -82,6 +129,8 @@ const Footer = () => {
               onChange={handleChangeInput}
             />
           </div>
+          <span className="validation-error">{validationErrors.username}</span>
+
           <div className="app__flex">
             <input
               className="p-text"
@@ -92,6 +141,8 @@ const Footer = () => {
               onChange={handleChangeInput}
             />
           </div>
+          <span className="validation-error">{validationErrors.email}</span>
+
           <div>
             <textarea
               className="p-text"
@@ -101,6 +152,8 @@ const Footer = () => {
               onChange={handleChangeInput}
             />
           </div>
+          <span className="validation-error">{validationErrors.recaptcha}</span>
+
           <ReCAPTCHA
             sitekey="6LdS0AMoAAAAAD-4dR2RoVgNKXMZMJJgXhv4rlQ-"
             onChange={handleRecaptchaChange}

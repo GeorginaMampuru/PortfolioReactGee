@@ -127,3 +127,8 @@
   .p-text {
     font-size: 1rem;
   }
+
+  .validation-error {
+    color: red;
+    font-size: 0.8rem; /* You can adjust the font size as needed */
+  }
