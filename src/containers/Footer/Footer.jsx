@@ -74,7 +74,7 @@ const Footer = () => {
       setLoading(false);
       return;
     }
-
+    setRecaptchaValue(null);
     // Clear validation errors for all fields
     setValidationErrors({
       username: '',
@@ -89,6 +89,7 @@ const Footer = () => {
       .then((result) => {
         console.log(result.text);
         setIsFormSubmitted(true);
+        setRecaptchaValue(null);
       })
       .catch((error) => {
         console.log(error.text);
