@@ -46,7 +46,7 @@ Feel free to get in touch with me:
 
 - **Email:** [georginamampuru@gmail.com]
 - **GitHub:** [https://github.com/GeorginaMampuru]
-- **Portfolio Website:** https://portfoliowithreact.web.app/
+
 
 ## Installation
 
